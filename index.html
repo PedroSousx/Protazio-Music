@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Protazio Music</title>
+</head>
+
+<body class="bg-zinc-900 text-white scroll-smooth">
+    <!-- NAVBAR -->
+    <nav class="bg-black w-full top-0 z-50 shadow-2xl">
+        <div class="px-8 mx-auto flex justify-between items-center py-4">
+            <!-- LOGO -->
+            <div class="uppercase font-bold text-2xl">
+                <span>Protazio</span><br>
+                <span class="text-red-700">Music</span>
+            </div>
+            <!-- ATRIBUTOS -->
+            <div>
+                <ul class="hidden md:flex gap-10 text-xl font-bold uppercase">
+                    <li><a href="#sobre" class="hover:text-red-700">Sobre</a></li>
+                    <li><a href="#cursos" class="hover:text-red-700">Cursos</a></li>
+                    <li><a href="#professores" class="hover:text-red-700">Professores</a></li>
+                    <li><a href="#showdealunos" class="hover:text-red-700">Show de Alunos</a></li>
+                    <li><a href="#contato" class="hover:text-red-700">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- CARROSSEL -->
+    <section>
+        <div class="relative w-full overflow-hidden">
+            <div class="carousel flex transition-transform duration-500 ease-in-out">
+                <img src="assets/Banner1.png" class="w-full flex-shrink-0 object-cover" alt="Slide 1">
+                <img src="assets/Banner2.png" class="w-full flex-shrink-0 object-cover" alt="Slide 2">
+            </div>
+            <!-- Botões -->
+            <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full hover:bg-red-700 transition"> &#10094; </button>
+            <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full hover:bg-red-700 transition"> &#10095; </button>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <!-- SOBRE -->
+    <section id="sobre" class="m-10">
+        <div>
+            <h1 class="uppercase text-center text-7xl font-semibold">Sobre</h1>
+        </div>
+        <div class="mx-20 mt-10 text-3xl leading-relaxed text-justify">
+            <p>A <span class="text-red-700">Protazio Music</span> nasceu com o propósito de oferecer ensino musical de qualidade, acessível e transformador.</p>
+            <br>
+            <p>Localizada no bairro da Estação em <span class="text-red-700">Franca-SP</span>, nossa escola é referência no ensino de instrumentos e técnica vocal para adolescentes e adultos.</p>
+            <br>
+            <p class="pb-10">Contamos com uma equipe de professores experientes e apaixonados pela arte de ensinar, sempre focados no desenvolvimento individual de cada aluno — seja você iniciante ou já com alguma bagagem musical.</p>
+        </div>
+    </section>
+    <!-- CURSOS -->
+    <section id='cursos' class="bg-slate-50">
+        <div>
+            <h1 class="mt-7 uppercase text-center text-7xl font-semibold text-black">Cursos</h1>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-16 mt-20 place-items-center mb-5">
+            <!-- Violão -->
+            <div class="bg-zinc-900 rounded-2xl p-4 w-80 flex flex-col items-center shadow-lg hover:bg-zinc-700">
+                <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
+                    <img src="assets/guitar-instrument - Editado.png" alt="Violão" class="w-12 h-12 object-contain" />
+                </div>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Violão</h2>
+                <p class="text-white text-base text-center">Aprenda desde os primeiros acordes até solos completos. Aulas práticas para quem quer tocar de verdade, no seu ritmo.</p>
+            </div>
+            <!-- Guitarra -->
+            <div class="bg-zinc-900 rounded-2xl p-4 w-80 flex flex-col items-center shadow-lg  hover:bg-zinc-700">
+                <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
+                    <img src="assets/electric-guitar - Editado.png" alt="Guitarra" class="w-12 h-12 object-contain" />
+                </div>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Guitarra</h2>
+                <p class="text-white text-base text-center">Explore timbres, técnicas e improviso. Da palhetada firme ao solo marcante, aqui você aprende a se destacar e colocar sentimento na música.</p>
+            </div>
+            <!-- Baixo -->
+            <div class="bg-zinc-900 rounded-2xl p-4 w-80 flex flex-col items-center shadow-lg  hover:bg-zinc-700">
+                <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
+                    <img src="assets/bass-guitar - Editado.png" alt="Baixo" class="w-12 h-12 object-contain" />
+                </div>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Baixo</h2>
+                <p class="text-white text-base text-center">O coração da banda bate aqui. Desenvolva groove, ritmo e presença com aulas focadas em técnica e feeling para se destacar.</p>
+            </div>
+            <!-- Canto -->
+            <div class="bg-zinc-900 rounded-2xl p-4 w-80 flex flex-col items-center shadow-lg  hover:bg-zinc-700">
+                <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
+                    <img src="assets/microphone - Editado.png" alt="Canto" class="w-12 h-12 object-contain" />
+                </div>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Canto</h2>
+                <p class="text-white text-base text-center">Descubra o poder da sua voz. Trabalhamos afinação, respiração e interpretação — mesmo que você nunca tenha cantado antes.</p>
+            </div>
+            <!-- Teclado -->
+            <div class="bg-zinc-900 rounded-2xl p-4 w-80 flex flex-col items-center shadow-lg  hover:bg-zinc-700">
+                <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
+                    <img src="assets/electric-keyboard - Editado.png" alt="Teclado" class="w-12 h-12 object-contain" />
+                </div>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Teclado</h2>
+                <p class="text-white text-base text-center">Domine acordes, melodias, leitura musical e muito mais. Perfeito pra quem quer tocar músicas e entender a base de tudo.</p>
+            </div>
+            <!-- Escaleta -->
+            <div class="bg-zinc-900 rounded-2xl p-4 w-80 flex flex-col items-center shadow-lg hover:bg-zinc-700">
+                <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
+                    <img src="assets/melodica - Editado.png" alt="Escaleta" class="w-12 h-12 object-contain" />
+                </div>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Escaleta</h2>
+                <p class="text-white text-base text-center">Ideal pra iniciar no sopro com musicalidade. Um instrumento divertido, acessível e cheio de possibilidades para você se divertir.</p>
+            </div>
+        </div>
+        <!-- PROFESSORES -->
+         <section id="professores">
+             <div>
+                 <h1 class="mt-20 uppercase text-center text-7xl font-semibold font text-black">Professores</h1>
+             </div>
+             <div>
+                 <p class="mx-20 mt-10 text-3xl leading-relaxed text-center text-black">Nossa equipe é formada por músicos experientes e apaixonados pela arte de ensinar. Cada professor traz uma bagagem única, combinando técnica, prática e muita inspiração para ajudar você a alcançar seus objetivos musicais.</p>
+             </div>
+             <div class="my-10 mx-20">
+                 <div class="flex gap-3">
+                     <img src="assets/2.png" alt="Professor Paulo" class="w-4/12" />
+                     <div class="text-black">
+                         <div>
+                             <h1 class="uppercase text-4xl text-center font-bold">Paulo Protázio</h1>
+                         </div>
+                         <br>
+                         <div class="text-center mx-32">
+                             <p class="mt-5 text-2xl font-light text-justify">Fundador da Protázio Music, Paulo descobriu sua paixão pela música ainda na infância, quando tocava violão escondido da mãe. Hoje, vive do que mais ama: a música. Músico completo e dedicado, ele transforma sua história pessoal em inspiração para cada aluno que passa pela escola.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- <div class="flex gap-3">
+                 <div class="text-black">
+                     <div>
+                         <h1 class="uppercase text-4xl text-center font-bold">Paulo Protázio</h1>
+                     </div>
+                     <br>
+                     <div class="text-center mx-5">
+                         <p class="mt-5 text-2xl font-light text-justify">Fundador da Protázio Music, Paulo descobriu sua paixão pela música ainda na infância, quando tocava violão escondido da mãe. Hoje, vive do que mais ama: a música. Músico completo e dedicado, ele transforma sua história pessoal em inspiração para cada aluno que passa pela escola.</p>
+                     </div>
+                 </div>
+             </div>
+                 <img src="assets/2.png" alt="Professor Paulo" class="w-4/12" />
+             </div> -->
+         </section>
+    </section>
+</body>
+
+</html>
