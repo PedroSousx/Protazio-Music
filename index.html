@@ -187,55 +187,74 @@
         </section>
         <!-- SHOW DE ALUNOS -->
         <section id="showdealunos" class="bg-zinc-900">
-            <h1 class="mt-10 py-5 px-5 uppercase text-center md:text-7xl text-5xl font-semibold">Show de Alunos</h1>
-            <p class="md:mx-20 md:mt-10 mx-5 mt-5 md:text-4xl text-2xl leading-10 text-justify">Nosso Show de Alunos é um evento especial onde celebramos o talento e a dedicação dos nossos alunos. É a oportunidade perfeita para mostrar o que você aprendeu, tocar com outros músicos e se apresentar em um ambiente acolhedor e cheio de energia positiva.</p>
+            <h1 class="py-5 px-5 uppercase text-center md:text-7xl text-5xl font-semibold">Show de Alunos</h1>
+            <p class="md:mx-20 mx-5 mt-5 md:text-4xl text-2xl leading-10 text-justify">teste</p>
         </section>
         <!-- CONTATO -->
-        <section id="contato" class="bg-slate-50 pb-10">
-            <H1 class="mt-20 uppercase text-center md:text-7xl text-5xl font-semibold text-black">Contato</H1>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-10 my-20">
-                <div>
-                    <img src="assets/Escola.webp" alt="Escola Protázio Music" class="w-full h-full rounded-2xl shadow-lg">
-                </div>
-                <div class="text-center text-black mx-10">
-                    <h2 class="uppercase text-5xl mb-5 font-medium">Vem se Juntar a escola!</h2>
-                    <p class="text-justify text-2xl my-3">Se você quer agendar uma aula experimental, tirar dúvidas ou saber mais sobre nossos cursos, responda o formulário!</p>
-                    <form action="mailto:seuemail@exemplo.com" method="POST" enctype="text/plain" class="space-y-4 max-w-lg text-left items-center">
-   
-                       <!-- Nome -->
-                       <div>
-                       <label for="nome" class="block font-medium">Nome</label>
-                       <input type="text" id="nome" name="nome" required 
-                               class="w-full p-2 border rounded-lg">
-                       </div>
-                       
-                       <!-- Email -->
-                       <div>
-                       <label for="email" class="block font-medium">Email</label>
-                       <input type="email" id="email" name="email" required 
-                               class="w-full p-2 border rounded-lg">
-                       </div>
-                       
-                       <!-- Telefone -->
-                       <div>
-                       <label for="telefone" class="block font-medium">Telefone</label>
-                       <input type="tel" id="telefone" name="telefone" 
-                               class="w-full p-2 border rounded-lg">
-                       </div>
-                       
-                       <!-- Mensagem -->
-                       <div>
-                       <label for="mensagem" class="block font-medium">Mensagem</label>
-                       <textarea id="mensagem" name="mensagem" rows="5" required 
-                                   class="w-full p-2 border rounded-lg"></textarea>
-                       </div>
-                       
-                       <!-- Botão -->
-                       <button type="submit" 
-                               class="bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700">
-                       Enviar
-                       </button>
-                   </form>
+        <section id="contato" class="bg-slate-50 my-10 mx-5">
+            <h1 class="uppercase text-center md:text-7xl text-5xl font-semibold text-black">Contato</h1>
+            <div class="mx-2 md:mx-10 my-10 md:my-20">
+                <div class="text-black md:mx-10">
+                    <h2 class="uppercase text-3xl md:text-5xl my-6 md:my-10 font-medium text-center">Vem se Juntar à Escola!</h2>
+                    <p class="text-lg md:text-2xl my-3 text-center max-w-xl mx-auto">
+                        Se você quer agendar uma aula experimental, tirar dúvidas ou saber mais sobre nossos cursos, responda o formulário!
+                    </p>
+                    <!-- FORM -->
+                    <form id="contact-form" class="space-y-4 w-full max-w-lg mx-auto flex flex-col">
+                        <!-- Nome -->
+                        <div>
+                            <label for="from-name" class="block text-sm font-medium">Nome</label>
+                            <input type="text" id="from-name" name="from_name" required
+                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black">
+                        </div>
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium">Email</label>
+                            <input type="email" id="email" name="reply_to" required
+                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black">
+                        </div>
+                        <!-- Telefone -->
+                        <div>
+                            <label for="phone" class="block text-sm font-medium">Telefone</label>
+                            <input type="text" id="phone" name="phone"
+                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black">
+                        </div>
+                        <!-- Mensagem -->
+                        <div>
+                            <label for="message" class="block text-sm font-medium">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"></textarea>
+                        </div>
+                        <!-- Botão -->
+                        <button id="button" type="submit"
+                            class="w-full py-2 px-4 bg-black text-white rounded-sm font-semibold transition hover:bg-red-600 mb-8">
+                            Enviar
+                        </button>
+                    </form>
+                    <!-- EmailJS -->
+                    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                    <script>
+                        emailjs.init("SNMF1jHLYBBcgJXsJ"); // Public key
+                    </script>
+                    <script>
+                        const form = document.getElementById("contact-form");
+                        const btn = document.getElementById("button");
+                        form.addEventListener("submit", function (event) {
+                            event.preventDefault();
+                            btn.innerText = "Enviando...";
+                            const serviceID = "service_cdh3l0g";
+                            const templateID = "template_uqhah43";
+                            emailjs.sendForm(serviceID, templateID, this)
+                                .then(() => {
+                                    btn.innerText = "Enviar";
+                                    alert("Mensagem enviada com sucesso!");
+                                    form.reset();
+                                }, (err) => {
+                                    btn.innerText = "Enviar";
+                                    alert("Erro: " + JSON.stringify(err));
+                                });
+                        });
+                    </script>
                 </div>
             </div>
         </section>
