@@ -191,9 +191,9 @@
             <p class="md:mx-20 mx-5 mt-5 md:text-4xl text-2xl leading-10 text-justify">teste</p>
         </section>
         <!-- CONTATO -->
-        <section id="contato" class="bg-slate-50 my-10 mx-5">
+        <section id="contato" class="bg-slate-50 my-10 mx-5 pb-10">
             <h1 class="uppercase text-center md:text-7xl text-5xl font-semibold text-black">Contato</h1>
-            <div class="mx-2 md:mx-10 my-10 md:my-20">
+            <div class="mx-2 md:mx-10 my-10 mb-10">
                 <div class="text-black md:mx-10">
                     <h2 class="uppercase text-3xl md:text-5xl my-6 md:my-10 font-medium text-center">Vem se Juntar à Escola!</h2>
                     <p class="text-lg md:text-2xl my-3 text-center max-w-xl mx-auto">
@@ -205,29 +205,29 @@
                         <div>
                             <label for="from-name" class="block text-sm font-medium">Nome</label>
                             <input type="text" id="from-name" name="from_name" required
-                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black">
+                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700">
                         </div>
                         <!-- Email -->
                         <div>
                             <label for="email" class="block text-sm font-medium">Email</label>
                             <input type="email" id="email" name="reply_to" required
-                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black">
+                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700">
                         </div>
                         <!-- Telefone -->
                         <div>
                             <label for="phone" class="block text-sm font-medium">Telefone</label>
                             <input type="text" id="phone" name="phone"
-                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black">
+                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700">
                         </div>
                         <!-- Mensagem -->
                         <div>
                             <label for="message" class="block text-sm font-medium">Mensagem</label>
                             <textarea id="message" name="message" rows="4" required
-                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"></textarea>
+                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"></textarea>
                         </div>
                         <!-- Botão -->
                         <button id="button" type="submit"
-                            class="w-full py-2 px-4 bg-black text-white rounded-sm font-semibold transition hover:bg-red-600 mb-8">
+                            class="w-full py-2 px-4 bg-black text-white rounded-sm font-semibold transition hover:bg-red-600">
                             Enviar
                         </button>
                     </form>
@@ -256,8 +256,54 @@
                         });
                     </script>
                 </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-16">
+                    <div class="text-center">
+                        <img src="assets/location.png" alt="ícone localização" class="w-28 h-28 mx-auto pb-2">
+                        <h2 class="uppercase text-black text-3xl font-semibold pb-5">localização</h2>
+                        <p class="text-center text-black mx-20 text-xl">Nossa escola fica em um cantinho especial de Franca. Esperamos você pra uma visita ou uma aula experimental!</p>
+                        <p class="text-red-700 underline mt-5">R. Virgínio Pereira, 1739</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="assets/whatsapp2.png" alt="ícone localização" class="w-28 h-28 mx-auto pb-2">
+                        <h2 class="uppercase text-black text-3xl font-semibold pb-5">WhatsApp</h2>
+                        <p class="text-center text-black mx-20 text-xl">Fale com a gente rapidinho! Tiramos dúvidas, agendamos aulas e atendemos direto no WhatsApp.</p>
+                        <p class="text-red-700 underline mt-5">16 99290-6304</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="assets/instagram.png" alt="ícone localização" class="w-28 h-28 mx-auto pb-2">
+                        <h2 class="uppercase text-black text-3xl font-semibold pb-5">instagram</h2>
+                        <p class="text-center text-black mx-20 text-xl">Siga a gente no Insta e veja de perto nossos alunos, bastidores, eventos e muita música rolando nos storys!</p>
+                        <p class="text-red-700 underline mt-5">@protaziomusic</p>
+                    </div>
+                </div>
             </div>
         </section>
+        <footer class="bg-black text-white py-10">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            
+            <!-- Logo / Nome -->
+            <div class="text-center md:text-left">
+            <h2 class="text-2xl font-bold tracking-wide">Protázio Music</h2>
+            <p class="text-sm text-gray-400">Ensino Musical de Qualidade</p>
+            </div>
+
+            <!-- Links -->
+            <nav class="flex flex-wrap justify-center md:justify-end md:gap-6 gap-2 sm:text-sm text-xs font-medium">
+            <a href="#sobre" class="hover:text-red-500 transition">Sobre</a>
+            <a href="#cursos" class="hover:text-red-500 transition">Cursos</a>
+            <a href="#professores" class="hover:text-red-500 transition">Professores</a>
+            <a href="#showdealunos" class="hover:text-red-500 transition">Show de Alunos</a>
+            <a href="#contato" class="hover:text-red-500 transition">Contato</a>
+            </nav>
+        </div>
+
+        <!-- Direitos Autorais -->
+        <div class="mt-8 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            <p>&copy; 2025 Protázio Music. Todos os direitos reservados.</p>
+            <p class="mt-1">Desenvolvido por <span class="font-semibold text-gray-300">Pedro Sousa</span></p>
+        </div>
+        </footer>
+
 </body>
 
 </html>
