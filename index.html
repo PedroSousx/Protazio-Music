@@ -50,18 +50,44 @@
         });
     </script>
     <!-- CARROSSEL -->
-    <section>
+    <!-- <section>
         <div class="relative w-full overflow-hidden">
             <div class="carousel flex transition-transform duration-500 ease-in-out">
                 <img src="assets/Banner3.png" class="w-full flex-shrink-0 object-cover" alt="Slide 1">
                 <img src="assets/Banner2.png" class="w-full flex-shrink-0 object-cover" alt="Slide 2">
             </div>
-            <!-- Botões -->
-            <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full hover:bg-red-700 transition"> &#10094; </button>
+            <!- Botões -->
+            <!-- <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full hover:bg-red-700 transition"> &#10094; </button>
             <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full hover:bg-red-700 transition"> &#10095; </button>
         </div>
-    </section>
-    <script src="main.js"></script>
+    </section> -->
+    <!-- <script src="main.js"></script>  -->
+<section 
+  class="relative min-h-screen bg-cover bg-center" 
+  style="background-image: url('assets/banner5.png');">
+
+  <!-- Overlay para contraste -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Texto centralizado -->
+  <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center text-white px-6">
+    
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
+      Bem-vindo à Protázio Music
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl max-w-xl">
+      Aprenda música com professores experientes e viva a paixão pela arte.
+    </p>
+
+    <a href="#cursos" 
+      class="mt-6 inline-block bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition text-sm sm:text-base">
+      Conheça nossos cursos
+    </a>
+  </div>
+</section>
+
+
     <!-- SOBRE -->
     <section id="sobre" class="md:m-10 m-5">
         <div>
@@ -138,7 +164,7 @@
             </div>
             <!-- PROFESSOR 1 -->
             <div class="sm:mx-14 mx-6 my-4">
-                <div class="rounded-2xl shadow-xl p-6 flex flex-col lg:flex-row items-center gap-6 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3">
+                <div class="rounded-2xl shadow-xl p-6 flex flex-col lg:flex-row items-center gap-6 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3 mb-5">
                     <!-- Foto -->
                     <div class="flex-shrink-0">
                         <img src="assets/Professor_Paulo.png" alt="Professor Paulo" class="lg:w-64 lg:h-64 w-80 h-80 object-cover rounded-2xl shadow-lg border-4 border-black" />
@@ -150,7 +176,7 @@
                     </div>
                 </div>
                 <!-- PROFESSOR 2 -->
-                <div class="rounded-2xl shadow-xl p-8 flex flex-col lg:flex-row items-center gap-8 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3">
+                <div class="rounded-2xl shadow-xl p-8 flex flex-col lg:flex-row items-center gap-8 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3 mb-5">
                     <!-- Foto -->
                     <div class="flex-shrink-0">
                         <img src="assets/Professor_Davi.png" alt="DAVI MIGUEL" class="lg:w-64 lg:h-64 w-80 h-80  object-cover rounded-2xl shadow-lg border-4 border-black" />
@@ -158,10 +184,16 @@
                     <!-- Texto -->
                     <div class="flex-1 text-black">
                         <h1 class="uppercase sm:text-3xl text-2xl font-bold text-black text-center lg:text-left"> Davi Miguel </h1>
-                        <p class="mt-5 text-lg md:text-xl leading-relaxed font-light text-justify"> Ex-aluno da Protázio Music, Davi começou sua jornada musical nas aulas com o <span class="text-red-700 font-semibold">professor Paulo.</span> Com talento, dedicação e amor pela arte, ele não só se desenvolveu como músico, mas também encontrou sua verdadeira vocação no ensino e assim como seu mestre, vive daquilo que mais ama. </p>
+                        <p class="mt-5 text-lg md:text-xl leading-relaxed font-light text-justify">  Davi é professor e guitarrista com uma jornada marcada por dedicação e paixão pela música. Sua história musical teve início aos 11 anos de idade, quando iniciou seus estudos de violão em uma igreja local, revelando desde cedo sua aptidão e facilidade para a música.
+                        Ao longo dos anos, Davi desenvolveu suas habilidades musicais, destacando-se não
+                        apenas como um talentoso guitarrista, mas também como um vocalista versátil. Sua
+                        jornada incluiu experiências enriquecedoras, como aulas de música com renomados
+                        professores e participação no Projeto Guri, onde aprimorou sua técnica no
+                        cavaquinho.
+                        </p>
                     </div>
                 </div>
-                <div class="rounded-2xl shadow-xl p-8 flex flex-col lg:flex-row items-center gap-8 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3">
+                <div class="rounded-2xl shadow-xl p-8 flex flex-col lg:flex-row items-center gap-8 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3 mb-5">
                     <!-- Foto -->
                     <div class="flex-shrink-0">
                         <img src="assets/person.png" alt="Professor Desconhecido" class="lg:w-64 lg:h-64 w-80 h-80 object-cover rounded-2xl shadow-lg border-4 border-black" />
@@ -172,7 +204,7 @@
                         <p class="mt-5 text-lg md:text-2xl leading-relaxed font-light text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, reiciendis esse. Beatae harum placeat iure nostrum delectus. Praesentium distinctio architecto, veritatis officia sequi cumque harum? Velit alias sequi laborum neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                     </div>
                 </div>
-                <div class="rounded-2xl shadow-xl p-8 flex flex-col lg:flex-row items-center gap-8 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3">
+                <div class="rounded-2xl shadow-xl p-8 flex flex-col lg:flex-row items-center gap-8 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3 mb-5">
                     <!-- Foto -->
                     <div class="flex-shrink-0">
                         <img src="assets/person.png" alt="Professor Desconhecido" class="lg:w-64 lg:h-64 w-80 h-80 object-cover rounded-2xl shadow-lg border-4 border-black" />
@@ -186,9 +218,49 @@
             </div>
         </section>
         <!-- SHOW DE ALUNOS -->
-        <section id="showdealunos" class="bg-zinc-900">
+        <section id="showdealunos" class="bg-zinc-900 pb-10">
             <h1 class="py-5 px-5 uppercase text-center md:text-7xl text-5xl font-semibold">Show de Alunos</h1>
-            <p class="md:mx-20 mx-5 mt-5 md:text-4xl text-2xl leading-10 text-justify">teste</p>
+            <p class="md:mx-20 md:my-20 mx-5 my-5 md:text-3xl text-2xl leading-relaxed text-justify">No final de cada ano, nossos alunos sobem ao palco para celebrar tudo o que aprenderam ao longo da jornada musical. É o momento em que cada acorde, cada ensaio e cada nota ganham vida diante da plateia, transformando-se em uma experiência inesquecível. <br> Familiares, amigos e apaixonados por música são convidados a prestigiar esse grande evento. Mais do que um espetáculo, é uma celebração da arte, da união e do esforço de cada aluno que faz parte da nossa escola.</p>
+            <div class="max-w-2xl mx-auto ">
+                <div id="default-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                            <img src="assets/3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/5.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-white group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="hidden">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-white group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="hidden">Next</span>
+                        </span>
+                    </button>
+                </div>
+                <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+            </div>
         </section>
         <!-- CONTATO -->
         <section id="contato" class="bg-slate-50 my-10 mx-5 pb-10">
@@ -205,25 +277,25 @@
                         <div>
                             <label for="from-name" class="block text-sm font-medium">Nome</label>
                             <input type="text" id="from-name" name="from_name" required
-                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700">
+                                class="w-full px-4 py-2 mt-1 border rounded-lg border-black focus:outline-none focus:ring-2 focus:ring-red-700">
                         </div>
                         <!-- Email -->
                         <div>
                             <label for="email" class="block text-sm font-medium">Email</label>
                             <input type="email" id="email" name="reply_to" required
-                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700">
+                                class="w-full px-4 py-2 mt-1 border rounded-lg border-black focus:outline-none focus:ring-2 focus:ring-red-700">
                         </div>
                         <!-- Telefone -->
                         <div>
                             <label for="phone" class="block text-sm font-medium">Telefone</label>
                             <input type="text" id="phone" name="phone"
-                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700">
+                                class="w-full px-4 py-2 mt-1 border rounded-lg border-black focus:outline-none focus:ring-2 focus:ring-red-700">
                         </div>
                         <!-- Mensagem -->
                         <div>
                             <label for="message" class="block text-sm font-medium">Mensagem</label>
                             <textarea id="message" name="message" rows="4" required
-                                class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"></textarea>
+                                class="w-full px-4 py-2 mt-1 border rounded-lg  border-black focus:outline-none focus:ring-2 focus:ring-red-700"></textarea>
                         </div>
                         <!-- Botão -->
                         <button id="button" type="submit"
@@ -258,19 +330,19 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-16">
                     <div class="text-center">
-                        <img src="assets/location.png" alt="ícone localização" class="w-28 h-28 mx-auto pb-2">
+                        <img src="assets/location.png" alt="ícone localização" class="w-20 h-20 mx-auto mb-5">
                         <h2 class="uppercase text-black text-3xl font-semibold pb-5">localização</h2>
                         <p class="text-center text-black mx-20 text-xl">Nossa escola fica em um cantinho especial de Franca. Esperamos você pra uma visita ou uma aula experimental!</p>
-                        <p class="text-red-700 underline mt-5">R. Virgínio Pereira, 1739</p>
+                        <p class="text-red-700 underline mt-5">R. Virgínio Pereira, 1739 - Estacao, Franca - SP</p>
                     </div>
                     <div class="text-center">
-                        <img src="assets/whatsapp2.png" alt="ícone localização" class="w-28 h-28 mx-auto pb-2">
+                        <img src="assets/whatsapp2.png" alt="ícone localização" class="w-20 h-20 mx-auto mb-5">
                         <h2 class="uppercase text-black text-3xl font-semibold pb-5">WhatsApp</h2>
                         <p class="text-center text-black mx-20 text-xl">Fale com a gente rapidinho! Tiramos dúvidas, agendamos aulas e atendemos direto no WhatsApp.</p>
-                        <p class="text-red-700 underline mt-5">16 99290-6304</p>
+                        <p class="text-red-700 underline mt-5">(16) 99290-6304</p>
                     </div>
                     <div class="text-center">
-                        <img src="assets/instagram.png" alt="ícone localização" class="w-28 h-28 mx-auto pb-2">
+                        <img src="assets/instagram.png" alt="ícone localização" class="w-20 h-20 mx-auto mb-5">
                         <h2 class="uppercase text-black text-3xl font-semibold pb-5">instagram</h2>
                         <p class="text-center text-black mx-20 text-xl">Siga a gente no Insta e veja de perto nossos alunos, bastidores, eventos e muita música rolando nos storys!</p>
                         <p class="text-red-700 underline mt-5">@protaziomusic</p>
