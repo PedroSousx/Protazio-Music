@@ -219,12 +219,12 @@
         </section>
         <!-- SHOW DE ALUNOS -->
         <section id="showdealunos" class="bg-zinc-900 pb-10">
-            <h1 class="py-5 px-5 uppercase text-center md:text-7xl text-5xl font-semibold">Show de Alunos</h1>
-            <p class="md:mx-20 md:my-20 mx-5 my-5 md:text-3xl text-2xl leading-relaxed text-justify">No final de cada ano, nossos alunos sobem ao palco para celebrar tudo o que aprenderam ao longo da jornada musical. É o momento em que cada acorde, cada ensaio e cada nota ganham vida diante da plateia, transformando-se em uma experiência inesquecível. <br> Familiares, amigos e apaixonados por música são convidados a prestigiar esse grande evento. Mais do que um espetáculo, é uma celebração da arte, da união e do esforço de cada aluno que faz parte da nossa escola.</p>
+            <h1 class="pt-5 px-5 uppercase text-center md:text-7xl text-5xl font-semibold">Show de Alunos</h1>
+            <p class="md:mx-20 md:my-10 mx-5 my-5 md:text-3xl text-2xl leading-relaxed text-justify">No fim do ano, nossos alunos sobem ao palco para apresentar o que aprenderam, em um espetáculo que celebra a música, a união e o esforço de cada um, diante de familiares, amigos e apaixonados pela arte.</p>
             <div class="max-w-2xl mx-auto ">
                 <div id="default-carousel" class="relative" data-carousel="static">
                     <!-- Carousel wrapper -->
-                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                    <div class="overflow-hidden relative h-56 rounded-lg lg:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
@@ -237,6 +237,10 @@
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="assets/5.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/4.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                         </div>
                     </div>
                     <!-- Slider indicators -->
@@ -333,19 +337,22 @@
                         <img src="assets/location.png" alt="ícone localização" class="w-20 h-20 mx-auto mb-5">
                         <h2 class="uppercase text-black text-3xl font-semibold pb-5">localização</h2>
                         <p class="text-center text-black mx-20 text-xl">Nossa escola fica em um cantinho especial de Franca. Esperamos você pra uma visita ou uma aula experimental!</p>
-                        <p class="text-red-700 underline mt-5">R. Virgínio Pereira, 1739 - Estacao, Franca - SP</p>
+                        <br>
+                        <a class="text-red-700 underline mt-5" href="https://maps.app.goo.gl/Dt4Ld5yWZpAZ2LZW8" target="_blank">R. Virgínio Pereira, 1739 - Estacao, Franca - SP</a>
                     </div>
                     <div class="text-center">
                         <img src="assets/whatsapp2.png" alt="ícone localização" class="w-20 h-20 mx-auto mb-5">
                         <h2 class="uppercase text-black text-3xl font-semibold pb-5">WhatsApp</h2>
                         <p class="text-center text-black mx-20 text-xl">Fale com a gente rapidinho! Tiramos dúvidas, agendamos aulas e atendemos direto no WhatsApp.</p>
-                        <p class="text-red-700 underline mt-5">(16) 99290-6304</p>
+                        <br>
+                        <a class="text-red-700 underline mt-5" href="https://wa.me/5516992906304" target="_blank">(16) 99290-6304</a>
                     </div>
                     <div class="text-center">
                         <img src="assets/instagram.png" alt="ícone localização" class="w-20 h-20 mx-auto mb-5">
                         <h2 class="uppercase text-black text-3xl font-semibold pb-5">instagram</h2>
                         <p class="text-center text-black mx-20 text-xl">Siga a gente no Insta e veja de perto nossos alunos, bastidores, eventos e muita música rolando nos storys!</p>
-                        <p class="text-red-700 underline mt-5">@protaziomusic</p>
+                        <br>
+                        <a class="text-red-700 underline mt-5" href="https://www.instagram.com/protaziomusic" target="_blank">@protaziomusic</a>
                     </div>
                 </div>
             </div>
@@ -355,8 +362,8 @@
             
             <!-- Logo / Nome -->
             <div class="text-center md:text-left">
-            <h2 class="text-2xl font-bold tracking-wide">Protázio Music</h2>
-            <p class="text-sm text-gray-400">Ensino Musical de Qualidade</p>
+                <h2 class="text-2xl font-bold tracking-wide">Protázio Music</h2>
+                <p class="text-sm text-gray-400">Ensino Musical de Qualidade</p>
             </div>
 
             <!-- Links -->
@@ -369,10 +376,30 @@
             </nav>
         </div>
 
+        <div class="flex flex-col items-center gap-3 mt-6">
+            <div class="flex gap-4 mb-2">
+                <a href="https://www.instagram.com/protaziomusic" target="_blank" rel="noopener" aria-label="Instagram"
+                   class="bg-red-700 hover:bg-red-800 rounded-full p-2 transition">
+                    <img src="assets/instagram.png" alt="Instagram" class="w-7 h-7" />
+                </a>
+                <a href="https://wa.me/5516992906304" target="_blank" rel="noopener" aria-label="WhatsApp"
+                   class="bg-green-600 hover:bg-green-700 rounded-full p-2 transition">
+                    <img src="assets/whatsapp2.png" alt="WhatsApp" class="w-7 h-7" />
+                </a>
+                    <a href="https://maps.app.goo.gl/Dt4Ld5yWZpAZ2LZW8" target="_blank" rel="noopener" aria-label="WhatsApp"
+                   class="bg-cyan-600 hover:bg-cyan-700 rounded-full p-2 transition">
+                    <img src="assets/location-branco.png" alt="WhatsApp" class="w-7 h-7" />
+                </a>
+
+            </div>
+        </div>
+
+
         <!-- Direitos Autorais -->
         <div class="mt-8 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
             <p>&copy; 2025 Protázio Music. Todos os direitos reservados.</p>
-            <p class="mt-1">Desenvolvido por <span class="font-semibold text-gray-300">Pedro Sousa</span></p>
+
+            <p class="mt-1">Desenvolvido por <a class="font-semibold text-gray-300" href="https://www.linkedin.com/in/pedro-sousa-251a382b1/" target="_blank">Pedro Sousa</a></p>
         </div>
         </footer>
 
