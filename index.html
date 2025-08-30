@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>Protazio Music</title>
+    <style>
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-opensans { font-family: 'Open Sans', sans-serif; }
+    </style>
 </head>
-
-<body class="bg-zinc-900 text-white">
+<body class="bg-zinc-900 text-white font-opensans">
     <!-- NAVBAR -->
     <nav class="bg-black w-full top-0 z-50 shadow-2xl">
         <div class="px-8 mx-auto flex justify-between items-center py-4">
             <!-- LOGO -->
-            <div class="">
+            <div>
                 <a href="#home" class="flex items-center">
                     <img src="assets/Logo.png" alt="Protazio Music Logo" class="xl:w-64 xl:h-20 w-44 h-16">
                 </a>
@@ -23,22 +27,22 @@
                 <img src="assets/Menu.png" alt="Menu" class="w-8 h-8">
             </button>
             <!-- MENU DESKTOP -->
-            <ul class="hidden xl:flex gap-10 text-2xl font-normal uppercase">
-                <li><a href="#sobre" class="hover:text-red-700">Sobre</a></li>
-                <li><a href="#cursos" class="hover:text-red-700">Cursos</a></li>
-                <li><a href="#professores" class="hover:text-red-700">Professores</a></li>
-                <li><a href="#showdealunos" class="hover:text-red-700">Show de Alunos</a></li>
-                <li><a href="#contato" class="hover:text-red-700">Contato</a></li>
+            <ul class="hidden xl:flex gap-10 text-2xl font-normal uppercase font-poppins">
+                <li><a href="#sobre" class="hover:text-red-700 font-opensans">Sobre</a></li>
+                <li><a href="#cursos" class="hover:text-red-700 font-opensans">Cursos</a></li>
+                <li><a href="#professores" class="hover:text-red-700 font-opensans">Professores</a></li>
+                <li><a href="#showdealunos" class="hover:text-red-700 font-opensans">Show de Alunos</a></li>
+                <li><a href="#contato" class="hover:text-red-700 font-opensans">Contato</a></li>
             </ul>
         </div>
         <!-- MENU MOBILE -->
         <div id="mobile-menu" class="hidden xl:hidden bg-black text-white px-8 pb-4">
-            <ul class="flex flex-col gap-4 text-xl font-normal uppercase">
-                <li><a href="#sobre" class="hover:text-red-700">Sobre</a></li>
-                <li><a href="#cursos" class="hover:text-red-700">Cursos</a></li>
-                <li><a href="#professores" class="hover:text-red-700">Professores</a></li>
-                <li><a href="#showdealunos" class="hover:text-red-700">Show de Alunos</a></li>
-                <li><a href="#contato" class="hover:text-red-700">Contato</a></li>
+            <ul class="flex flex-col gap-4 text-xl font-normal uppercase font-poppins">
+                <li><a href="#sobre" class="hover:text-red-700 font-opensans">Sobre</a></li>
+                <li><a href="#cursos" class="hover:text-red-700 font-opensans">Cursos</a></li>
+                <li><a href="#professores" class="hover:text-red-700 font-opensans">Professores</a></li>
+                <li><a href="#showdealunos" class="hover:text-red-700 font-opensans">Show de Alunos</a></li>
+                <li><a href="#contato" class="hover:text-red-700 font-opensans">Contato</a></li>
             </ul>
         </div>
     </nav>
@@ -49,60 +53,46 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
-    <!-- CARROSSEL -->
-    <!-- <section>
-        <div class="relative w-full overflow-hidden">
-            <div class="carousel flex transition-transform duration-500 ease-in-out">
-                <img src="assets/Banner3.png" class="w-full flex-shrink-0 object-cover" alt="Slide 1">
-                <img src="assets/Banner2.png" class="w-full flex-shrink-0 object-cover" alt="Slide 2">
-            </div>
-            <!- Botões -->
-            <!-- <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full hover:bg-red-700 transition"> &#10094; </button>
-            <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full hover:bg-red-700 transition"> &#10095; </button>
-        </div>
-    </section> -->
-    <!-- <script src="main.js"></script>  -->
-<section 
-  class="relative min-h-screen bg-cover bg-center" 
-  style="background-image: url('assets/banner5.png');">
+    <section 
+    class="relative min-h-screen bg-cover bg-center" 
+    style="background-image: url('assets/banner5.png');">
 
-  <!-- Overlay para contraste -->
-  <div class="absolute inset-0 bg-black/50"></div>
+    <!-- Overlay para contraste -->
+    <div class="absolute inset-0 bg-black/50"></div>
 
-  <!-- Texto centralizado -->
-  <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center text-white px-6">
-    
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-      Bem-vindo à Protázio Music
-    </h1>
+    <!-- Texto centralizado -->
+    <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center text-white px-6">
+        
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 font-poppins">
+        Bem-vindo à Protázio Music
+        </h1>
 
-    <p class="text-base sm:text-lg md:text-xl max-w-xl">
-      Aprenda música com professores experientes e viva a paixão pela arte.
-    </p>
+        <p class="text-base sm:text-lg md:text-xl max-w-xl font-opensans">
+        Aprenda música com professores experientes e viva a paixão pela arte.
+        </p>
 
-    <a href="#cursos" 
-      class="mt-6 inline-block bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition text-sm sm:text-base">
-      Conheça nossos cursos
-    </a>
-  </div>
-</section>
-
+        <a href="#cursos" 
+        class="mt-6 inline-block bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition text-sm sm:text-base font-opensans">
+        Conheça nossos cursos
+        </a>
+    </div>
+    </section>
 
     <!-- SOBRE -->
-    <section id="sobre" class="md:m-10 m-5">
+    <section id="sobre" class="md:m-10 m-5 pb-5">
         <div>
-            <h1 class="uppercase text-center md:text-7xl text-5xl font-semibold">Sobre</h1>
+            <h1 class="uppercase text-center md:text-7xl text-5xl font-semibold font-poppins">Sobre</h1>
         </div>
-        <div class="md:mx-20 md:mt-10 mx-5 mt-5 md:text-4xl text-2xl leading-10 text-justify">
-            <p>A <span class="text-red-700">Protazio Music</span> nasceu de um sonho: <br><br>Criar um espaço onde a educação musical fosse sinônimo de excelência, acolhimento e transformação. <br><br>Nosso propósito fundamental é oferecer uma jornada de aprendizado que não apenas ensina a tocar um instrumento, mas que também inspira, capacita e abre portas, tornando a música uma força positiva e acessível na vida de cada pessoa que passa por aqui.</p>
+        <div class="md:mx-20 md:mt-10 mx-5 mt-5 md:text-4xl text-2xl leading-10 text-justify font-opensans">
+            <p>A <span class="text-red-700 font-poppins">Protazio Music</span> nasceu de um sonho: <br><br>Criar um espaço onde a educação musical fosse sinônimo de excelência, acolhimento e transformação. <br><br>Nosso propósito fundamental é oferecer uma jornada de aprendizado que não apenas ensina a tocar um instrumento, mas que também inspira, capacita e abre portas, tornando a música uma força positiva e acessível na vida de cada pessoa que passa por aqui.</p>
             <br>
-            <p>Com uma equipe de professores apaixonados e experientes, a Protázio Music se destaca por sua abordagem personalizada, onde cada aluno é visto como único. <br><br>Nosso compromisso é com a qualidade do ensino, a evolução musical e o desenvolvimento pessoal de cada estudante, criando um ambiente onde todos possam se sentir à vontade para explorar, errar e crescer.</p>
+            <p>Com uma equipe de professores apaixonados e experientes, a Protázio Music se destaca por sua abordagem personalizada, onde cada aluno é visto como único.</p>
         </div>
     </section>
     <!-- CURSOS -->
     <section id='cursos' class="bg-slate-50 ">
         <div>
-            <h1 class="pt-7 uppercase text-center md:text-7xl text-5xl font-semibold text-black">Cursos</h1>
+            <h1 class="pt-7 uppercase text-center md:text-7xl text-5xl font-semibold text-black font-poppins">Cursos</h1>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-16 mt-20 place-items-center mb-5 mx-20">
             <!-- Violão -->
@@ -110,57 +100,57 @@
                 <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
                     <img src="assets/guitar-instrument - Editado.png" alt="Violão" class="w-12 h-12 object-contain" />
                 </div>
-                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Violão</h2>
-                <p class="text-white text-xl text-center">Aprenda desde os primeiros acordes até solos completos. Aulas práticas para quem quer tocar de verdade, no seu ritmo.</p>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase font-poppins">Violão</h2>
+                <p class="text-white text-xl text-center font-opensans">Aprenda desde os primeiros acordes até solos completos. Aulas práticas para quem quer tocar de verdade, no seu ritmo.</p>
             </div>
             <!-- Guitarra -->
             <div class="bg-zinc-900 rounded-2xl p-4 sm:w-96 w-80 flex flex-col items-center shadow-lg hover:bg-zinc-800 transition-all duration-300 hover:scale-105">
                 <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
                     <img src="assets/electric-guitar - Editado.png" alt="Guitarra" class="w-12 h-12 object-contain" />
                 </div>
-                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Guitarra</h2>
-                <p class="text-white text-xl text-center">Explore timbres, técnicas e improviso. Da palhetada firme ao solo marcante, aqui você aprende a se destacar e colocar sentimento na música.</p>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase font-poppins">Guitarra</h2>
+                <p class="text-white text-xl text-center font-opensans">Explore timbres, técnicas e improviso. Da palhetada firme ao solo marcante, aqui você aprende a se destacar e colocar sentimento na música.</p>
             </div>
             <!-- Baixo -->
             <div class="bg-zinc-900 rounded-2xl p-4 sm:w-96 w-80 flex flex-col items-center shadow-lg hover:bg-zinc-800 transition-all duration-300 hover:scale-105">
                 <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
                     <img src="assets/bass-guitar - Editado.png" alt="Baixo" class="w-12 h-12 object-contain" />
                 </div>
-                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Baixo</h2>
-                <p class="text-white text-xl text-center">O coração da banda bate aqui. Desenvolva groove, ritmo e presença com aulas focadas em técnica e feeling para se destacar.</p>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase font-poppins">Baixo</h2>
+                <p class="text-white text-xl text-center font-opensans">O coração da banda bate aqui. Desenvolva groove, ritmo e presença com aulas focadas em técnica e feeling para se destacar.</p>
             </div>
             <!-- Canto -->
             <div class="bg-zinc-900 rounded-2xl p-4 sm:w-96 w-80 flex flex-col items-center shadow-lg hover:bg-zinc-800 transition-all duration-300 hover:scale-105">
                 <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
                     <img src="assets/microphone - Editado.png" alt="Canto" class="w-12 h-12 object-contain" />
                 </div>
-                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Canto</h2>
-                <p class="text-white text-xl text-center">Descubra o poder da sua voz. Trabalhamos afinação, respiração e interpretação — mesmo que você nunca tenha cantado antes.</p>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase font-poppins">Canto</h2>
+                <p class="text-white text-xl text-center font-opensans">Descubra o poder da sua voz. Trabalhamos afinação, respiração e interpretação — mesmo que você nunca tenha cantado antes.</p>
             </div>
             <!-- Teclado -->
             <div class="bg-zinc-900 rounded-2xl p-4 sm:w-96 w-80 flex flex-col items-center shadow-lg hover:bg-zinc-800 transition-all duration-300 hover:scale-105">
                 <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
                     <img src="assets/electric-keyboard - Editado.png" alt="Teclado" class="w-12 h-12 object-contain" />
                 </div>
-                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Teclado</h2>
-                <p class="text-white text-xl text-center">Domine acordes, melodias, leitura musical e muito mais. Perfeito pra quem quer tocar músicas e entender a base de tudo.</p>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase font-poppins">Teclado</h2>
+                <p class="text-white text-xl text-center font-opensans">Domine acordes, melodias, leitura musical e muito mais. Perfeito pra quem quer tocar músicas e entender a base de tudo.</p>
             </div>
             <!-- Escaleta -->
             <div class="bg-zinc-900 rounded-2xl p-4 sm:w-96 w-80 flex flex-col items-center shadow-lg hover:bg-zinc-800 transition-all duration-300 hover:scale-105">
                 <div class="bg-red-700 rounded-xl w-20 h-20 flex items-center justify-center -mt-12 mb-4">
                     <img src="assets/melodica - Editado.png" alt="Escaleta" class="w-12 h-12 object-contain" />
                 </div>
-                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase">Escaleta</h2>
-                <p class="text-white text-xl text-center">Ideal pra iniciar no sopro com musicalidade. Um instrumento divertido, acessível e cheio de possibilidades para você se divertir.</p>
+                <h2 class="text-white text-2xl font-bold mb-2 text-center uppercase font-poppins">Escaleta</h2>
+                <p class="text-white text-xl text-center font-opensans">Ideal pra iniciar no sopro com musicalidade. Um instrumento divertido, acessível e cheio de possibilidades para você se divertir.</p>
             </div>
         </div>
         <!-- PROFESSORES -->
         <section id="professores">
             <div>
-                <h1 class="mt-20 uppercase text-center md:text-7xl text-5xl font-semibold text-black">Professores</h1>
+                <h1 class="mt-20 uppercase text-center md:text-7xl text-5xl font-semibold text-black font-poppins">Professores</h1>
             </div>
             <div>
-                <p class="md:mx-20 md:my-20 mx-5 my-5 md:text-3xl text-2xl leading-relaxed text-justify text-black">Nossa equipe é formada por músicos experientes e apaixonados pela arte de ensinar. Cada professor traz uma bagagem única, combinando técnica, prática e muita inspiração para ajudar você a alcançar seus objetivos musicais.</p>
+                <p class="md:mx-20 md:my-20 mx-5 my-5 md:text-3xl text-2xl leading-relaxed text-justify text-black font-opensans">Nossa equipe é formada por músicos experientes e apaixonados pela arte de ensinar. Cada professor traz uma bagagem única, combinando técnica, prática e muita inspiração para ajudar você a alcançar seus objetivos musicais.</p>
             </div>
             <!-- PROFESSOR 1 -->
             <div class="sm:mx-14 mx-6 my-4">
@@ -171,8 +161,8 @@
                     </div>
                     <!-- Texto -->
                     <div class="flex-1 text-black">
-                        <h1 class="uppercase sm:text-3xl text-2xl font-bold text-black text-center lg:text-left"> Paulo Protázio </h1>
-                        <p class="mt-5 text-lg md:text-xl leading-relaxed font-light text-justify"> Fundador da <span class="font-semibold text-red-700">Protázio Music</span>, Paulo descobriu sua paixão pela música ainda na infância, quando tocava violão escondido da mãe. Hoje, vive do que mais ama: a música. Músico completo e dedicado, ele transforma sua história pessoal em inspiração para cada aluno que passa pela escola. </p>
+                        <h1 class="uppercase sm:text-3xl text-2xl font-bold text-black text-center lg:text-left font-poppins"> Paulo Protázio </h1>
+                        <p class="mt-5 text-lg md:text-xl leading-relaxed font-light text-justify font-opensans"> Fundador da <span class="font-semibold text-red-700 font-poppins">Protázio Music</span>, Paulo descobriu sua paixão pela música ainda na infância, quando tocava violão escondido da mãe. Hoje, vive do que mais ama: a música. Músico completo e dedicado, ele transforma sua história pessoal em inspiração para cada aluno que passa pela escola. </p>
                     </div>
                 </div>
                 <!-- PROFESSOR 2 -->
@@ -183,8 +173,8 @@
                     </div>
                     <!-- Texto -->
                     <div class="flex-1 text-black">
-                        <h1 class="uppercase sm:text-3xl text-2xl font-bold text-black text-center lg:text-left"> Davi Miguel </h1>
-                        <p class="mt-5 text-lg md:text-xl leading-relaxed font-light text-justify">  Davi é professor e guitarrista com uma jornada marcada por dedicação e paixão pela música. Sua história musical teve início aos 11 anos de idade, quando iniciou seus estudos de violão em uma igreja local, revelando desde cedo sua aptidão e facilidade para a música.
+                        <h1 class="uppercase sm:text-3xl text-2xl font-bold text-black text-center lg:text-left font-poppins"> Davi Miguel </h1>
+                        <p class="mt-5 text-lg md:text-xl leading-relaxed font-light text-justify font-opensans">  Davi é professor e guitarrista com uma jornada marcada por dedicação e paixão pela música. Sua história musical teve início aos 11 anos de idade, quando iniciou seus estudos de violão em uma igreja local, revelando desde cedo sua aptidão e facilidade para a música.
                         Ao longo dos anos, Davi desenvolveu suas habilidades musicais, destacando-se não
                         apenas como um talentoso guitarrista, mas também como um vocalista versátil. Sua
                         jornada incluiu experiências enriquecedoras, como aulas de música com renomados
@@ -196,38 +186,40 @@
                 <div class="rounded-2xl shadow-xl p-8 flex flex-col lg:flex-row items-center gap-8 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3 mb-5">
                     <!-- Foto -->
                     <div class="flex-shrink-0">
-                        <img src="assets/person.png" alt="Professor Desconhecido" class="lg:w-64 lg:h-64 w-80 h-80 object-cover rounded-2xl shadow-lg border-4 border-black" />
+                        <img src="assets/Professor_Junior.jpeg" alt="Professor Júnior" class="lg:w-64 lg:h-64 w-80 h-80 object-cover rounded-2xl shadow-lg border-4 border-black" />
                     </div>
                     <!-- Texto -->
                     <div class="flex-1 text-black">
-                        <h1 class="uppercase sm:text-4xl text-3xl font-bold text-black text-center lg:text-left"> Professor Desconhecido </h1>
-                        <p class="mt-5 text-lg md:text-2xl leading-relaxed font-light text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, reiciendis esse. Beatae harum placeat iure nostrum delectus. Praesentium distinctio architecto, veritatis officia sequi cumque harum? Velit alias sequi laborum neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                        <h1 class="uppercase sm:text-4xl text-3xl font-bold text-black text-center lg:text-left font-poppins"> Professor Júnior </h1>
+                        <p class="mt-5 text-lg md:text-xl leading-relaxed font-light text-justify font-opensans"> Junior Paixão é cantor, produtor vocal e regente de corais, com 20 anos de carreira na música.
+                        Estuda música e canto desde os 8 anos de idade e atuando profissionalmente desde 2005, consolidou-se como intérprete versátil, instrutor de grupos vocais e direção musical. Utiliza um método de ensino próprio chamado "Educação e Técnica Vocal com Paixão", trabalha em suas aulas com os pilares de desenvolvimento de percepção e resistência muscular, unindo técnica, musicalidade, interpretação e ciência da voz.</p>
                     </div>
                 </div>
                 <div class="rounded-2xl shadow-xl p-8 flex flex-col lg:flex-row items-center gap-8 hover:bg-zinc-300 transition-all duration-300 hover:scale-105 lg:mx-20 mx-3 mb-5">
                     <!-- Foto -->
                     <div class="flex-shrink-0">
-                        <img src="assets/person.png" alt="Professor Desconhecido" class="lg:w-64 lg:h-64 w-80 h-80 object-cover rounded-2xl shadow-lg border-4 border-black" />
+                        <img src="assets/Professor_Julio.jpeg" alt="Professor Júlio" class="lg:w-64 lg:h-64 w-80 h-80 object-cover rounded-2xl shadow-lg border-4 border-black" />
                     </div>
                     <!-- Texto -->
                     <div class="flex-1 text-black">
-                        <h1 class="uppercase sm:text-4xl text-3xl font-bold text-black text-center lg:text-left"> Professor Desconhecido </h1>
-                        <p class="mt-5 text-lg md:text-2xl leading-relaxed font-light text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, reiciendis esse. Beatae harum placeat iure nostrum delectus. Praesentium distinctio architecto, veritatis officia sequi cumque harum? Velit alias sequi laborum neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                        <h1 class="uppercase sm:text-4xl text-3xl font-bold text-black text-center lg:text-left font-poppins"> Professor Júlio </h1>
+                        <p class="mt-5 text-lg md:text-xl leading-relaxed font-light text-justify font-opensans"> Júlio Fonseca 
+                        Tecladista autodidata com mais de 15 anos de experiência e professor de teclado há mais de 3 anos. Aprimorou seus conhecimentos em harmonia e rearmonização com Renato Silva e aprofundou-se nos estilos Groove e Neo Soul através dos estudos com o tecladista Rapha Dantop.
+                        Com ampla vivência de palco, já atuou em bandas de diferentes estilos e gêneros musicais e dividiu palco com nomes consagrados da música cristã, como Luiz Arcanjo (Trazendo a Arca) e Lídia Moisés (Voz da Verdade).</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- SHOW DE ALUNOS -->
         <section id="showdealunos" class="bg-zinc-900 pb-10">
-            <h1 class="pt-5 px-5 uppercase text-center md:text-7xl text-5xl font-semibold">Show de Alunos</h1>
-            <p class="md:mx-20 md:my-10 mx-5 my-5 md:text-3xl text-2xl leading-relaxed text-justify">No fim do ano, nossos alunos sobem ao palco para apresentar o que aprenderam, em um espetáculo que celebra a música, a união e o esforço de cada um, diante de familiares, amigos e apaixonados pela arte.</p>
+            <h1 class="pt-5 px-5 uppercase text-center md:text-7xl text-5xl font-semibold font-poppins">Show de Alunos</h1>
+            <p class="md:mx-20 md:my-10 mx-5 my-5 md:text-3xl text-2xl leading-relaxed text-justify font-opensans">No fim do ano, nossos alunos sobem ao palco para apresentar o que aprenderam, em um espetáculo que celebra a música, a união e o esforço de cada um, diante de familiares, amigos e apaixonados pela arte.</p>
             <div class="max-w-2xl mx-auto ">
                 <div id="default-carousel" class="relative" data-carousel="static">
                     <!-- Carousel wrapper -->
-                    <div class="overflow-hidden relative h-56 rounded-lg lg:h-96">
+                    <div class="overflow-hidden relative h-80 rounded-lg md:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
                             <img src="assets/3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                         </div>
                         <!-- Item 2 -->
@@ -268,15 +260,15 @@
         </section>
         <!-- CONTATO -->
         <section id="contato" class="bg-slate-50 my-10 mx-5 pb-10">
-            <h1 class="uppercase text-center md:text-7xl text-5xl font-semibold text-black">Contato</h1>
+            <h1 class="uppercase text-center md:text-7xl text-5xl font-semibold text-black font-poppins">Contato</h1>
             <div class="mx-2 md:mx-10 my-10 mb-10">
                 <div class="text-black md:mx-10">
-                    <h2 class="uppercase text-3xl md:text-5xl my-6 md:my-10 font-medium text-center">Vem se Juntar à Escola!</h2>
-                    <p class="text-lg md:text-2xl my-3 text-center max-w-xl mx-auto">
+                    <h2 class="uppercase text-3xl md:text-5xl my-6 md:my-10 font-medium text-center font-poppins">Venha se Juntar à Escola!</h2>
+                    <p class="text-lg md:text-2xl my-3 text-center max-w-xl mx-auto font-opensans">
                         Se você quer agendar uma aula experimental, tirar dúvidas ou saber mais sobre nossos cursos, responda o formulário!
                     </p>
                     <!-- FORM -->
-                    <form id="contact-form" class="space-y-4 w-full max-w-lg mx-auto flex flex-col">
+                    <form id="contact-form" class="space-y-4 w-full max-w-lg mx-auto flex flex-col font-opensans">
                         <!-- Nome -->
                         <div>
                             <label for="from-name" class="block text-sm font-medium">Nome</label>
@@ -303,7 +295,7 @@
                         </div>
                         <!-- Botão -->
                         <button id="button" type="submit"
-                            class="w-full py-2 px-4 bg-black text-white rounded-sm font-semibold transition hover:bg-red-600">
+                            class="w-full py-2 px-4 bg-black text-white rounded-sm font-semibold transition hover:bg-red-600 font-opensans">
                             Enviar
                         </button>
                     </form>
@@ -332,32 +324,32 @@
                         });
                     </script>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-16">
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-6 mt-16">
                     <div class="text-center">
                         <img src="assets/location.png" alt="ícone localização" class="w-20 h-20 mx-auto mb-5">
-                        <h2 class="uppercase text-black text-3xl font-semibold pb-5">localização</h2>
-                        <p class="text-center text-black mx-20 text-xl">Nossa escola fica em um cantinho especial de Franca. Esperamos você pra uma visita ou uma aula experimental!</p>
+                        <h2 class="uppercase text-black text-3xl font-semibold pb-5 font-poppins">localização</h2>
+                        <p class="text-center text-black mx-20 text-xl font-opensans">Nossa escola fica em um cantinho especial de Franca. Esperamos você pra uma visita ou uma aula experimental!</p>
                         <br>
-                        <a class="text-red-700 underline mt-5" href="https://maps.app.goo.gl/Dt4Ld5yWZpAZ2LZW8" target="_blank">R. Virgínio Pereira, 1739 - Estacao, Franca - SP</a>
+                        <a class="text-red-700 underline mt-5 font-opensans" href="https://maps.app.goo.gl/Dt4Ld5yWZpAZ2LZW8" target="_blank">R. Virgínio Pereira, 1739 - Estacao, Franca - SP</a>
                     </div>
                     <div class="text-center">
                         <img src="assets/whatsapp2.png" alt="ícone localização" class="w-20 h-20 mx-auto mb-5">
-                        <h2 class="uppercase text-black text-3xl font-semibold pb-5">WhatsApp</h2>
-                        <p class="text-center text-black mx-20 text-xl">Fale com a gente rapidinho! Tiramos dúvidas, agendamos aulas e atendemos direto no WhatsApp.</p>
+                        <h2 class="uppercase text-black text-3xl font-semibold pb-5 font-poppins">WhatsApp</h2>
+                        <p class="text-center text-black mx-20 text-xl font-opensans">Fale com a gente rapidinho! Tiramos dúvidas, agendamos aulas e atendemos direto no WhatsApp.</p>
                         <br>
-                        <a class="text-red-700 underline mt-5" href="https://wa.me/5516992906304" target="_blank">(16) 99290-6304</a>
+                        <a class="text-red-700 underline mt-5 font-opensans" href="https://wa.me/5516992906304" target="_blank">(16) 99290-6304</a>
                     </div>
                     <div class="text-center">
                         <img src="assets/instagram.png" alt="ícone localização" class="w-20 h-20 mx-auto mb-5">
-                        <h2 class="uppercase text-black text-3xl font-semibold pb-5">instagram</h2>
-                        <p class="text-center text-black mx-20 text-xl">Siga a gente no Insta e veja de perto nossos alunos, bastidores, eventos e muita música rolando nos storys!</p>
+                        <h2 class="uppercase text-black text-3xl font-semibold pb-5 font-poppins">instagram</h2>
+                        <p class="text-center text-black mx-20 text-xl font-opensans">Siga a gente no Insta e veja de perto nossos alunos, bastidores, eventos e muita música rolando nos storys!</p>
                         <br>
-                        <a class="text-red-700 underline mt-5" href="https://www.instagram.com/protaziomusic" target="_blank">@protaziomusic</a>
+                        <a class="text-red-700 underline mt-5 font-opensans" href="https://www.instagram.com/protaziomusic" target="_blank">@protaziomusic</a>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="bg-black text-white py-10">
+  <footer class="bg-black text-white py-10 font-opensans">
         <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
             
             <!-- Logo / Nome -->
@@ -388,7 +380,7 @@
                 </a>
                     <a href="https://maps.app.goo.gl/Dt4Ld5yWZpAZ2LZW8" target="_blank" rel="noopener" aria-label="WhatsApp"
                    class="bg-cyan-600 hover:bg-cyan-700 rounded-full p-2 transition">
-                    <img src="assets/location-branco.png" alt="WhatsApp" class="w-7 h-7" />
+                    <img src="assets/location.png" alt="WhatsApp" class="w-7 h-7" />
                 </a>
 
             </div>
@@ -399,10 +391,8 @@
         <div class="mt-8 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
             <p>&copy; 2025 Protázio Music. Todos os direitos reservados.</p>
 
-            <p class="mt-1">Desenvolvido por <a class="font-semibold text-gray-300" href="https://www.linkedin.com/in/pedro-sousa-251a382b1/" target="_blank">Pedro Sousa</a></p>
+            <p class="mt-1">Desenvolvido por <a class="font-semibold text-gray-300" href="https://wa.me/5516999733714" target="_blank">pedroh.scintra@gmail.com</a></p>
         </div>
         </footer>
-
 </body>
-
 </html>
